@@ -9,46 +9,117 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            #name{
-                padding: 5ch;
-                margin: 0ch;
+            header{
+                background-color: chocolate;
+                padding: 1,5rem 7%;
+                justify-content: space-between;
+                align-items: center;
+               
+                top: 0;
+                right: 0;
+                left: 0;
+                display: flex;
             }
-            #email{
-                padding: 5ch;
-                margin: 0ch;
+            .container{
+                margin: 105 auto;
+                width: 50%;
+                padding: 8px;
             }
-            #message{
-                padding: 5ch;
-                margin: 0ch;
+            .container img{
+                float: left;
+                width: 300px;
+                height: 260px;
+                padding: 0 10px 0 0;
+                
             }
-            #submit{
-                padding-left: 10ch;
+            .text{
+                text-align: justify;
+                font-family: verdana;
             }
-            #h11{
-                padding-top: 0ch;
-                margin-top: 0ch;
-                background-color: black;
-                color: rgb(248, 243, 243);
+            section{
+
+             display: flex; 
+             justify-content: space-between; 
+             align-items: center;
+             padding: 1.5rem 7%; 
             }
+            section p{
+                margin-left: 15ch;
+                font-size: larger;
+
+            }
+            main p{
+                padding: 15ch;
+                width: 50000ch;;
+            }
+            h3{
+                padding: 40px; 
+                margin-left: 60ch;
+                font-size: larger;
+            }
+           
+        
+           
+
+           
+            
+            
+            .header img{
+                height: 8rem;
+                width: 8rem;
+                margin: 0;
+            }
+            nav a{
+               font:  1,6rem;
+               margin: 0 18rem;
+            }
+          
+            
+           
             #copyrigth{
                 background-color: black;
                 color: rgb(246, 244, 244);
+                padding-left: 70ch;
+               
+            
             }
-           nav{ 
-               padding: 0;
-               margin-top: 0ch;
-               margin-bottom: 0ch;
-               background-color: chocolate;
-
+           
+           table, th, td {
+            padding: 15ch;
+            margin: 45ch;
+            border: 1px solid black;
+            border-collapse: collapse;
+            size: 35cm;
+            width: 40ch;
+            height: 20ch;
            }
-            table, th, td {
-  border: 1px solid rgb(254, 249, 249);
-  border-collapse: collapse;
-}
-            th, td {
-  padding: 5px;
-  text-align: left;    
-}
+           #name{
+                padding-left:  45ch;
+                margin: 5ch;
+            }
+            #email{
+                padding-left:  45ch;
+                margin: 5ch;
+            }
+            
+            #number{
+                padding-left:  45ch;
+                margin: 5ch;
+            }
+            #message{
+                padding-left:  45ch;
+                margin: 5ch;
+            }
+            #submit{
+                padding-left: 80ch;
+                width: 50rem;
+                margin: 5ch;
+                size: 10cm;
+
+            }
+            .inputm{
+                padding: 50ch;
+            }
          
                    
         </style>
@@ -58,49 +129,88 @@
         <header>
             
             <img  src="data:image/png;base64,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" alt="" width="50" height="50" >
-            <h1 id="h11" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif color hsla(0, 23%, 97%, 0);">ToDo</h1>
             <nav>
-            
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
             </nav>
 
         
         
         
         </header>
-        <main>
-            <p>My name is Essa Eayd Abu Kheir </p>
-            <p>My email is esaaeyad22@gmail.com</p>
-            <p>Phone number: 0791915880</p>
-            <p>This main developer for this site , I look forward to do more sites .  Please help me to improve my work , Leave your honest opinion in the field below , and provide us of your contact information then click SUMBIT</p>
-           <h1>SUMBIT FORM</h1>
-            <div id="name">
-                <label>User name</label>
-                <input type="text">
-  
+        <h3> Essa Iyad Abu al-Khair</h3> 
+        <section>
+            
+
+
+            <img src="https://avatars.githubusercontent.com/u/103421189?v=4" alt=" Me photo">
+            
+              <p>I have a bachelors degree from Yarmouk University, and I am currently working as a website designer  This main developer for this site , I look forward to do more sites .  Please help me to improve my work , Leave your honest opinion in the field below , and provide us of your contact information</p>  
+           
+        
+            
+        </section>>           
+            
+                        
+            
+
+               
+               
+            
+            
+            
+           
+            
+            
+            <h1 style="padding-left: 40ch ;">Contact Me</h1>
+            <form action="">
+                <br>
+                <div id="name">
+                    
+                    <label>Full Name</label>
+                    <div id="inputn"></div>
+                    <input class="input" type="text">
+                </div>
+        
+                </div>
+                <br>
+            <div id="email">
+                
+                <label>Email  </label>
+                <div id="inpute">
+                
+                <input  class="input" type="email" placeholder="Write Email" required="">
+                </div>
+                
+            </div>
+            <br>
+            <div id="number">
+                <label>Phone</label>
+                <div id="inputp">
+                <input class="input" type="message" required="">  
+                </div>          
+            </div>
+            <br>
+            <div id="message">
+                <label> Message</label>
+                <div id="inputm">
+                <input class="input" type="message" required="" width="50rem" height="50rem">
+                </div>
             </div>
             <br>
             
-            <br>
-            <div id="email">
-                <label>Email</label>
-                <input type="email" placeholder="Write Email" required="">
-            </div>
-            <div id="message">
-                <label>Message</label>
-                <input type="message" required="">
-            </div>
             <div id="submit">
-                <input type="submit" value="submit" size="70" width="50" height="50">
+            <input  type="submit" value="send" size="70" width="50rem" height="50rem">
             </div>
-        
-
-
+            </form>
+            <br>
+    
+            
+            
+            
+           
        
-        </main>
+        
         <br>
         <br>
         <footer>
