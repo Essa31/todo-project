@@ -1,0 +1,62 @@
+#red p{
+    background-color: darkred;
+    padding-left:  10rem;
+    padding-right:10rem ;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#gren p{
+    background-color: rgb(16, 239, 27);
+    padding-left:  10rem;
+    padding-right:10rem ;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.header img{
+    height: 8rem;
+    width: 8rem;
+    margin: 0;
+}
+header{
+    background-color: chocolate;
+    padding: 1,5rem 7%;
+    justify-content: space-between;
+    align-items: center;
+   
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+
+    
+
+}
+
+  h1{
+    padding-left: 40ch;
+    
+    margin-top: 4ch;
+    background-color: black;
+    color: rgb(248, 243, 243);
+}
+
+nav a{
+   font:  1,6rem;
+   margin: 0 18rem;
+}
+#copyrigth{
+    background-color: black;
+    color: rgb(246, 244, 244);
+    padding-left: 70ch;
+   
+}
+
+table, th, td {
+padding: 15ch;
+margin: 45ch;
+border: 1px solid black;
+border-collapse: collapse;
+size: 35cm;
+width: 40ch;
+height: 20ch;
+}

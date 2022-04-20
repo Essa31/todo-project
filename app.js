@@ -22,7 +22,38 @@ if ( confirm == 'no'){
             alert( name +" Welcome to my website ")
         }
     }
+    alert("As a user, I would like to answer more questions")
+    let Answer1=prompt("Q.1 Do you like programming ? ")
+    let Answer2=prompt("Q.2 Do you like learning new things?")
+    let Answer3=prompt("Q.3 Do you want to get rich?")
+    l1=[]
+    if(Answer1==""){
+        l1.push("invalid")
 
+        
+    }else{
+        l1.unshift(Answer1)
+    }
+    if(Answer2==""){
+        l1.unshift("invalid")
+
+        
+    }else{
+        l1.unshift(Answer2)
+    }
+    if(Answer3==""){
+        l1.unshift("invalid")
+
+        
+    }else{
+        l1.unshift(Answer3)
+    }
+    for(i=0;i<l1.length;i++){
+        let item =l1[i]
+        console.log(item)
+
+    }
+    
     
    
    
