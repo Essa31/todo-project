@@ -1,0 +1,152 @@
+
+header{
+    background-color: chocolate;
+    padding: 1,5rem 7%;
+    justify-content: space-between;
+    align-items: center;
+   
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+.container{
+    margin: 105 auto;
+    width: 50%;
+    padding: 8px;
+}
+.container img{
+    float: left;
+    width: 300px;
+    height: 260px;
+    padding: 0 10px 0 0;
+    
+}
+.text{
+    text-align: justify;
+    font-family: verdana;
+}
+section{
+
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center;
+ padding: 1.5rem 7%; 
+}
+section p{
+    margin-left: 15ch;
+    font-size: larger;
+
+}
+main p{
+    padding: 15ch;
+    width: 50000ch;;
+}
+h3{
+    padding: 40px; 
+    margin-left: 60ch;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+.header img{
+    height: 8rem;
+    width: 8rem;
+    margin: 0;
+}
+nav a{
+   font:  1,6rem;
+   margin: 0 18rem;
+}
+
+
+
+#copyrigth{
+    background-color: black;
+    color: rgb(246, 244, 244);
+    padding-left: 70ch;
+   
+
+}
+
+table, th, td {
+padding: 15ch;
+margin: 45ch;
+border: 1px solid black;
+border-collapse: collapse;
+size: 35cm;
+width: 40ch;
+height: 20ch;
+}
+#name{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 7%; 
+    padding-left: 45ch;
+    margin: 5rem;
+}
+#name input{
+    padding-right: 45ch;
+    margin-right: 5rem;
+
+}
+#email{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 7%; 
+    padding-left:  45ch;
+    margin:5rem;
+}
+#email input{
+    padding-right: 45ch;
+    margin-right: 5rem;
+
+}
+
+#number{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 7%; 
+    padding-left:  45ch;
+    margin: 5rem;
+}
+#number input{
+    padding-right: 45ch;
+    margin-right: 5rem;
+}
+#message input{
+    padding-right: 45ch;
+    margin-right: 5rem;
+    height: 10rem;
+}
+#message{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 7%; 
+    padding-left:  45ch;
+    margin: 5rem;
+}
+#submit{
+    padding-left: 80ch;
+    width: 50rem;
+    margin: 5ch;
+    size: 10cm;
+
+}
+#submit input{
+
+    width: 10rem;
+    height: 3rem;
+}
+.inputm{
+    padding: 50ch;
+}
